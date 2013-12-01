@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Conditional Shortcodes
- * Plugin URI: https://github.com/nash-ye/WP-Conditional-Shortcodes
+ * Plugin Name: Moody Shortcodes
+ * Plugin URI: https://github.com/nash-ye/WP-Moody-Shortcodes
  * Description: A simple API to do the shortcodes on certain conditions.
  * Author: Nashwan Doaqan
  * Author URI: http://nashwan-d.com
@@ -13,14 +13,14 @@
  */
 
 /**
- * The conditional shortcodes manager.
+ * The moody shortcodes manager.
  *
  * @since 0.1
  */
-class Conditional_Shortcodes_Manager {
+class Moody_Shortcodes_Manager {
 
 	/**
-	 * The conditional shortcodes list.
+	 * The moody shortcodes list.
 	 *
 	 * @var array
 	 * @since 0.1
@@ -41,7 +41,7 @@ class Conditional_Shortcodes_Manager {
 	/*** Static Methods *******************************************************/
 
 	/**
-	 * A magic method to call the conditional shortcodes holders.
+	 * A magic method to call the moody shortcodes holders.
 	 *
 	 * @since 0.1
 	 */
@@ -121,7 +121,7 @@ class Conditional_Shortcodes_Manager {
 	} // end get_shortcode_holder()
 
 	/**
-	 * Get the conditional shortcodes list.
+	 * Get the moody shortcodes list.
 	 *
 	 * @return array
 	 * @since 0.1
@@ -131,7 +131,7 @@ class Conditional_Shortcodes_Manager {
 	} // end get_list()
 
 	/**
-	 * Register a conditional shortcode.
+	 * Register a moody shortcode.
 	 *
 	 * @return bool
 	 * @since 0.1
@@ -171,7 +171,7 @@ class Conditional_Shortcodes_Manager {
 	} // end register()
 
 	/**
-	 * Deregister a conditional theme.
+	 * Deregister a moody theme.
 	 *
 	 * @return void
 	 * @since 0.1
@@ -180,4 +180,4 @@ class Conditional_Shortcodes_Manager {
 		unset( self::$shortcodes[ $tag ] );
 	} // end deregister()
 
-} // end class Conditional_Shortcodes_Manager
+} // end class Moody_Shortcodes_Manager
